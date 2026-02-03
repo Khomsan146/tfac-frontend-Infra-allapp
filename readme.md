@@ -57,12 +57,8 @@ docker push ghcr.io/khomsan146/tfac-frontend-infra-allapp:1.x
 ตรวจสอบได้ที่
 GitHub → Profile → Packages → tfac-frontend-infra-allapp
 PHASE 5 – Deploy on K3s
-7.1 Create Secret (ทำครั้งเดียว)
+7.1 Create Secret 
 kubectl create secret docker-registry ghcr-secret \
- --docker-server=ghcr.io \
- --docker-username=Khomsan146 \
- --docker-password=<GITHUB_TOKEN> \
- --docker-email=admin@tfac.or.th
 7.2 Deployment
 deployment.yaml
 7.3 Service
@@ -126,4 +122,5 @@ K3s Deployment
    ↓
 monitor.tfac.or.th
 README นี้คือ คู่มือครบทั้งระบบระดับ Production
+
 
