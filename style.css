@@ -1,0 +1,41 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 50px 0;
+  font-size: 36px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  padding: 0 60px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 40px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+.card small {
+  display: block;
+  font-size: 15px;
+  color: #cbd5f5;
+  margin-top: 10px;
+}
